@@ -1,0 +1,76 @@
+@import 'variables.css';
+
+.skills__container {
+    grid-template-columns: 300px;
+    justify-content: center;
+    row-gap: 1.5rem; 
+    padding-top: 1rem;
+}
+
+.skills__card {
+    position: relative;
+
+}
+
+.skills__content {
+    height: 100%;
+    background-color: var(--body-color);
+    border: 4px solid var(--black-color);
+    padding: 6rem 1rem 3rem;
+    z-index: 5;
+    position: relative;
+    transition: background-color .4s, border 4s;
+}
+
+.skills__border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--first-color);
+    top: 0;
+    left: 0;
+    transition: transform .4s;
+}
+
+.skills__card:hover .skills__border {
+    transform: translate(.75rem, .75rem);
+}
+
+.skills__icon {
+    position: relative;
+    display: inline-block;
+}
+
+.skills__icon i {
+    font-size: 2rem;
+    color: var(--black-color);
+    position: relative;
+    z-index: 5;
+}
+
+.skills__box {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: var(--first-color);
+    right: -2px;
+    top: -2px;
+}
+
+.skills__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 1.25rem
+}
+
+.skills__title span {
+    color: var(--black-color);
+    background: linear-gradient(90deg, hsla(46, 98%, 50%, .3), hsla(14, 98%, 50%, 0));
+}
+.skills__item img{
+    width: 40px;
+}
+
+.skills__list li{
+    display: flex;
+    gap: 20px;
+}
